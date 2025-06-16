@@ -116,7 +116,7 @@ export default function DiscoverTab() {
         
         <div className="space-y-3">
           {filteredUsers.slice(0, 2).map(user => (
-            <Card key={user.id} className="bg-gradient-to-r from-slate-700/40 to-slate-600/40 backdrop-blur-sm border-slate-600/30">
+            <Card key={user.id} className="mobile-card bg-gradient-to-r from-slate-700/40 to-slate-600/40">
               <CardContent className="p-4">
                 <div className="flex items-start space-x-3">
                   <img
@@ -132,16 +132,16 @@ export default function DiscoverTab() {
                           size="sm"
                           onClick={() => connectMutation.mutate(user.id)}
                           disabled={connectMutation.isPending}
-                          className="w-8 h-8 crypto-gradient rounded-lg flex items-center justify-center hover:opacity-80 transition-opacity"
+                          className="action-button w-10 h-10 crypto-gradient rounded-xl flex items-center justify-center"
                         >
-                          <UserPlus size={12} />
+                          <UserPlus size={14} />
                         </Button>
                         <Button
                           size="sm"
                           variant="ghost"
-                          className="w-8 h-8 bg-slate-600 rounded-lg flex items-center justify-center hover:bg-slate-500 transition-colors text-white"
+                          className="action-button w-10 h-10 bg-slate-600/60 rounded-xl flex items-center justify-center text-white"
                         >
-                          <MessageCircle size={12} />
+                          <MessageCircle size={14} />
                         </Button>
                       </div>
                     </div>

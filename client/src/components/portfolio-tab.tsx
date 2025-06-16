@@ -35,7 +35,7 @@ export default function PortfolioTab() {
   return (
     <div className="space-y-6">
       {/* Portfolio Overview */}
-      <Card className="bg-gradient-to-r from-purple-500/20 to-cyan-500/20 backdrop-blur-sm border-slate-600/30">
+      <Card className="mobile-card bg-gradient-to-r from-purple-500/20 to-cyan-500/20">
         <CardContent className="p-4">
           <div className="flex items-center justify-between mb-4">
             <h3 className="text-lg font-semibold text-white">Portfolio Overview</h3>
@@ -91,7 +91,7 @@ export default function PortfolioTab() {
       </Card>
 
       {/* Recent Transactions */}
-      <Card className="bg-slate-700/30 backdrop-blur-sm border-slate-600/30">
+      <Card className="mobile-card">
         <CardContent className="p-4">
           <h3 className="text-lg font-semibold mb-4 text-white">Recent Activity</h3>
           <div className="space-y-3">

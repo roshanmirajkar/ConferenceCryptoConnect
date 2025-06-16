@@ -89,7 +89,7 @@ export default function MessagesTab() {
           {mockConversations.map(conversation => (
             <Card 
               key={conversation.user.id} 
-              className="bg-slate-700/30 backdrop-blur-sm border-slate-600/30 hover:border-purple-500/50 transition-colors cursor-pointer"
+              className="mobile-card hover:border-purple-500/50 cursor-pointer"
             >
               <CardContent className="p-4">
                 <div className="flex items-start space-x-3">
