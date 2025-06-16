@@ -131,7 +131,7 @@ export default function MessagesTab() {
       </div>
 
       {/* Quick Actions */}
-      <Card className="bg-gradient-to-r from-purple-500/10 to-cyan-500/10 backdrop-blur-sm border-slate-600/30">
+      <Card className="mobile-card bg-gradient-to-r from-purple-500/10 to-cyan-500/10">
         <CardContent className="p-4">
           <h4 className="font-semibold mb-3 text-white">Quick Actions</h4>
           <div className="grid grid-cols-2 gap-3">
